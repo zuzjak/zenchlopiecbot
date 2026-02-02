@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Żeńchłopiec Bot | Pomoc</title>
+
+    <link rel="icon" type="image/webp" href="images/logo.webp">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+
+<header class="hero-section">
+    <div class="hero-inner">
+        <img src="images/logo.webp" alt="Logo" class="main-logo">
+        <div class="hero-text">
+            <h1>ŻEŃCHŁOPIEC <span class="bot-tag">BOT</span></h1>
+            <p>Najwierniejszy strażnik wegańskiej dyktatury :3</p>
+            <div class="hero-buttons">
+                <a href="https://www.youtube.com/@szefastian" class="btn-yt" target="_blank" rel="noopener noreferrer">YouTube</a>
+                <a href="https://zuzjak.pl/" class="btn-pink" target="_blank" rel="noopener noreferrer">Autorka</a>
+            </div>
+        </div>
+        <a href="https://store.hytale.com/" target="_blank" rel="noopener noreferrer" class="creator-link">
+            <img src="images/hytale.png" alt="Kod Twórcy" class="creator-badge">
+        </a>
+    </div>
+</header>
+
+
+
+    <main class="content">
+
+        <h2 class="section-title">Zdolności Żeńchłopca</h2>
+
+
+
+        <div class="category-tabs">
+
+            <button class="tab-btn active" onclick="openCategory(event, 'community')">Informacje</button>
+
+            <button class="tab-btn" onclick="openCategory(event, 'mod')">Moderacja</button>
+
+            <button class="tab-btn" onclick="openCategory(event, 'interactions')">Interakcje</button>
+
+            <button class="tab-btn" onclick="openCategory(event, 'logs')">Logi</button>
+
+            <button class="tab-btn" onclick="openCategory(event, 'others')">Inne</button>
+
+        </div>
+
+
+
+<div id="community" class="tab-content">
+
+    <h3 class="log-category-title">ℹ️ Informacje</h3>
+    
+    <section class="doc-card">
+        <div class="doc-card-header">
+            <div class="doc-title-group">
+                <span class="cmd-name">/profil</span>
+                <span class="badge" style="background: #5865f2; color: white;">Użytkownik</span>
+            </div>
+        </div>
+        <div class="doc-card-body">
+            <div class="doc-preview">
+                <div class="discord-embed" style="border-left: 4px solid #06713c;">
+                    <div class="embed-title">Profil: Użytkownik</div>
+                    <div class="embed-description">
+                        🆔 <strong>Nick:</strong> Użytkownik<br>
+                        ⚠️ <strong>Aktywne warny:</strong> 0<br>
+                        🔇 <strong>Aktywny mute:</strong> Nie<br>
+                        📅 <strong>Na serwerze od:</strong> 01.01.2026<br>
+                        🎂 <strong>Konto założone:</strong> 01.01.2026<br>
+                        🎭 <strong>Role:</strong> @widz
+                    </div>
+                </div>
+            </div>
+            <div class="doc-instructions">
+                <p>Wyświetla szczegółowe informacje o statusie użytkownika, aktywnych karach oraz stażu na serwerze.</p>
+            </div>
+        </div>
+    </section>
+
+   <section class="doc-card">
+    <div class="doc-card-header">
+        <div class="doc-title-group">
+            <span class="cmd-name">Lobby</span>
+            <span class="badge" style="background: #5865f2; color: white;">System</span>
+        </div>
+    </div>
+    <div class="doc-card-body">
+        <div class="doc-preview">
+            <div class="discord-embed" style="border-left: 4px solid #43b581; margin-bottom: 15px;">
+                <div class="embed-title">Witaj!</div>
+                <div class="embed-description">
+                    Fajnie, że do nas dołączyłeś, <strong>NazwaUżytkownika</strong>.<br>
+                    Jesteś naszym <strong>1234</strong> członkiem!
+                </div>
+            </div>
+            
+            <div class="discord-embed" style="border-left: 4px solid #f04747;">
+                <div class="embed-title">Żegnaj!</div>
+                <div class="embed-description">
+                    <strong>NazwaUżytkownika</strong> opuścił serwer...<br>
+                    Zostało nas: <strong>1233</strong>
+                </div>
+            </div>
+        </div>
+        <div class="doc-instructions">
+            <p>System automatycznych powitań i pożegnań, który personalizuje wiadomości i aktualizuje licznik członków w czasie rzeczywistym.</p>
+            <p>Bot nadaje rolę @widz każdemu nowemu użytkownikowi.</p>
+        </div>
+    </div>
+</section>
+</div>
+
+
+        <div id="mod" class="tab-content">
+    <h3 class="log-category-title">⚠️ Zgłoszenia</h3>
+    
+    <section class="doc-card">
+        <div class="doc-card-header">
+            <div class="doc-title-group">
+                <span class="cmd-name">/report</span>
+                <span class="badge">Użytkownik</span>
+            </div>
+        </div>
+        <div class="doc-card-body">
+            <div class="doc-preview">
+                <div class="discord-embed red">
+                    <div class="embed-inner">
+                        <img src="images/avatar_placeholder.webp" class="embed-thumb-small" alt="Avatar">
+                        <div class="embed-title">⚠️ NOWE ZGŁOSZENIE</div>
+                        <div class="embed-fields">
+                            <div class="field inline"><span class="field-name">Zgłoszony: </span><span class="field-value">Użytkownik</span></div>
+                            <div class="field inline"><span class="field-name">Zgłaszający: </span><span class="field-value">Ty</span></div>
+                            <div class="field"><span class="field-name">Miejsce: </span><span class="field-value">#kanał-tekstowy</span></div>
+                            <div class="field"><span class="field-name">Powód: </span><div class="code-block">Przykładowy powód zgłoszenia...</div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="discord-ui-preview">
+                    <div class="fake-select">Wybierz czas wyciszenia... <span>▾</span></div>
+                    <div class="fake-buttons">
+                        <button class="d-btn gray">Warn</button>
+                        <button class="d-btn red">Zbanuj</button>
+                        <button class="d-btn gray">Odrzuć</button>
+                    </div>
+                </div>
+            </div>
+            <div class="doc-instructions">
+                <h4>System Raportów</h4>
+                <p>Zgłoszenia w sprawny sposób alarmują moderację o nagannym zachowniu innego użytkownika.</p>
+                <p>Moderatorzy otrzymują panel z przyciskami pod zgłoszeniem, co pozwala na natychmiastową reakcję bez wpisywania komend.</p>
+            </div>
+        </div>
+    </section>
+
+    <h3 class="log-category-title">🔨 Kary i Ostrzeżenia</h3>
+
+    <section class="doc-card">
+        <div class="doc-card-header">
+            <div class="doc-title-group"><span class="cmd-name">/warn</span><span class="badge">Mod</span></div>
+        </div>
+        <div class="doc-card-body">
+            <div class="doc-preview">
+                <div class="discord-embed gold">
+                    <div class="embed-description">Użytkownik <strong>Użytkownik</strong> otrzymał ostrzeżenie od <strong>Moderator</strong>.<br><strong>Powód:</strong> Przykładowy powód<br><strong>Suma aktywnych ostrzeżeń:</strong> 1</div>
+                </div>
+            </div>
+            <div class="doc-instructions">
+                <h4>Ostrzeżenia</h4>
+                <p>Oficjalne ostrzeżenie użytkownika za nieodpowiednie zachowanie. System automatycznie wycisza na 7 dni przy 3 warnach.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="doc-card">
+        <div class="doc-card-header">
+            <div class="doc-title-group"><span class="cmd-name">/unwarn</span><span class="badge">Mod</span></div>
+        </div>
+        <div class="doc-card-body">
+            <div class="doc-preview">
+                <div class="discord-embed green">
+                    <div class="embed-description">Pomyślnie cofnięto ostatnie ostrzeżenie użytkownikowi <strong>Użytkownik</strong>.<br><strong>Powód cofnięcia:</strong> Wyjaśnione w apelacji<br><strong>Aktualna liczba aktywnych ostrzeżeń:</strong> 0</div>
+                </div>
+            </div>
+            <div class="doc-instructions">
+                <h4>Cofanie ostrzeżeń</h4>
+                <p>Zdejmuje ostatnie ostrzeżenie z kartoteki użytkownika.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="doc-card">
+        <div class="doc-card-header">
+            <div class="doc-title-group"><span class="cmd-name">/mute</span><span class="badge">Mod</span></div>
+        </div>
+        <div class="doc-card-body">
+            <div class="doc-preview">
+                <div class="discord-embed red">
+                    <div class="embed-description">Użytkownik <strong>Użytkownik</strong> został wyciszony na <strong>1d 0h 0m</strong> przez <strong>Moderator</strong>.<br><strong>Powód:</strong> Spamowanie</div>
+                </div>
+            </div>
+            <div class="doc-instructions">
+                <h4>Wyciszenie</h4>
+                <p>Blokuje możliwość pisania i mówienia na określony czas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="doc-card">
+        <div class="doc-card-header">
+            <div class="doc-title-group"><span class="cmd-name">/unmute</span><span class="badge">Mod</span></div>
+        </div>
+        <div class="doc-card-body">
+            <div class="doc-preview">
+                <div class="discord-embed green">
+                    <div class="embed-description">Moderator <strong>Moderator</strong> odciszył użytkownika <strong>Użytkownik</strong>.</div>
+                </div>
+            </div>
+            <div class="doc-instructions">
+                <h4>Odciszenie</h4>
+                <p>Ręczne przywrócenie uprawnień przed upływem czasu kary.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="doc-card">
+        <div class="doc-card-header">
+            <div class="doc-title-group"><span class="cmd-name">/mutes</span><span class="badge">Mod</span></div>
+        </div>
+        <div class="doc-card-body">
+            <div class="doc-preview">
+                <div class="discord-embed" style="border-left: 4px solid #dd4d7d;">
+                    <div class="embed-title">🔇 Lista aktywnych wyciszeń</div>
+                    <div class="embed-description">
+                        • <strong>@Gaduła</strong> (User1) - kończy się <span class="code-inline">za 2 godziny</span><br>
+                        • <strong>@Spamer</strong> (User2) - kończy się <span class="code-inline">za 5 dni</span>
+                    </div>
+                </div>
+            </div>
+            <div class="doc-instructions">
+                <h4>Aktywne Wyciszenia</h4>
+                <p>Pozwala szybko sprawdzić listę nałożonych timeoutów.</p>
+            </div>
+        </div>
+    </section>
+
+    <h3 class="log-category-title">🛡️ Dyktatura</h3>
+
+    <section class="doc-card">
+        <div class="doc-card-header">
+            <div class="doc-title-group"><span class="cmd-name">/kick</span><span class="badge">Mod</span></div>
+        </div>
+        <div class="doc-card-body">
+            <div class="doc-preview">
+                <div class="discord-embed orange">
+                    <div class="embed-description">Użytkownik <strong>Użytkownik</strong> został wyrzucony przez <strong>Moderator</strong>.<br><strong>Powód:</strong> Brak kultury</div>
+                </div>
+            </div>
+            <div class="doc-instructions">
+                <h4>Wyrzucenie</h4>
+                <p>Usuwa z serwera, ale nie blokuje ponownego wejścia.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="doc-card">
+        <div class="doc-card-header">
+            <div class="doc-title-group"><span class="cmd-name">/ban</span><span class="badge">Mod</span></div>
+        </div>
+        <div class="doc-card-body">
+            <div class="doc-preview">
+                <div class="discord-embed darkred">
+                    <div class="embed-description">Użytkownik <strong>Użytkownik</strong> został zbanowany przez <strong>Moderator</strong>.<br><strong>Powód:</strong> Działanie na szkodę serwera</div>
+                </div>
+            </div>
+            <div class="doc-instructions">
+                <h4>Banicja</h4>
+                <p>Stała blokada dostępu do serwera.</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+<div id="interactions" class="tab-content">
+
+   
+
+    <h3 class="log-category-title">🎫 System Kontaktowy (Tickety)</h3>
+
+    <section class="doc-card">
+
+        <div class="doc-card-header">
+
+            <div class="doc-title-group"><span class="cmd-name">Ticket</span><span class="badge admin">Użytkownik</span></div>
+
+        </div>
+
+        <div class="doc-card-body">
+
+            <div class="doc-preview">
+
+                <div class="discord-embed" style="border-left: 4px solid #dd4d7d;">
+
+                    <div class="embed-title">Prywatny kanał z dyktatorem i moderacją :3</div>
+
+                    <div class="embed-description">Aby stworzyć ticket, kliknij przycisk poniżej.</div>
+
+                </div>
+
+                <div class="fake-buttons" style="margin-top: 10px;">
+
+                    <button class="d-btn blue" style="background: #5865f2; padding: 8px 16px;">Otwórz ticket 📩</button>
+
+                </div>
+
+            </div>
+
+            <div class="doc-instructions">
+
+                <p>Tworzy prywatny wątek dostępny tylko dla autora i administracji. Idealne do zgłaszania spraw wymagających prywatności.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <h3 class="log-category-title">💡 Sugestie Społeczności</h3>
+
+    <section class="doc-card">
+
+        <div class="doc-card-header">
+
+            <div class="doc-title-group"><span class="cmd-name">Sugestie: discordowe lub kontentowe</span><span class="badge admin">Użytkownik</span></div>
+
+        </div>
+
+        <div class="doc-card-body">
+
+            <div class="doc-preview">
+
+                <div class="discord-embed" style="border-left: 4px solid #dd4d7d;">
+
+                    <div class="embed-title">Podziel się pomysłem!</div>
+
+                    <div class="embed-description">Zgłoś propozycję zmian. Pamiętaj o zachowaniu kultury!</div>
+
+                </div>
+
+                <div class="fake-buttons" style="margin-top: 10px;">
+
+                    <button class="d-btn" style="background: #248046; padding: 8px 16px;">Zgłoś sugestię 💡</button>
+
+                </div>
+
+            </div>
+
+            <div class="doc-instructions">
+
+                <p>Otwiera formularz umożliwiający opisanie propopzycji. Po wysłaniu, bot tworzy wątek i embed z automatycznymi reakcjami ⬆️ i ⬇️, umożliwiając innym głosowanie na pomysł.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <h3 class="log-category-title">❓ Pytania i Odpowiedzi (Q&A)</h3>
+
+    <section class="doc-card">
+
+        <div class="doc-card-header">
+
+            <div class="doc-title-group"><span class="cmd-name">Pytania do szefastiana</span><span class="badge admin">Użytkownik</span></div>
+
+        </div>
+
+        <div class="doc-card-body">
+
+            <div class="doc-preview">
+
+                <div class="discord-embed" style="border-left: 4px solid #dd4d7d;">
+
+                    <div class="embed-title">Masz pytanie do szefastiana?</div>
+
+                    <div class="embed-description">Kliknij przycisk poniżej, aby zadać pytanie.</div>
+
+                </div>
+
+                <div class="fake-buttons" style="margin-top: 10px;">
+
+                    <button class="d-btn gray" style="padding: 8px 16px;">Zadaj pytanie ❓</button>
+
+                </div>
+
+            </div>
+
+            <div class="doc-instructions">
+
+                <p>Użytkownik wpisuje pytanie w formularzu, a bot publikuje je na kanale Q&A i od razu tworzy pod nim wątek do dyskusji.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <h3 class="log-category-title">🎬 Zakulisy</h3>
+
+    <section class="doc-card">
+
+        <div class="doc-card-header">
+
+            <div class="doc-title-group"><span class="cmd-name">Zakulisy</span><span class="badge admin">Dyktator</span></div>
+
+        </div>
+
+        <div class="doc-card-body">
+
+            <div class="doc-preview">
+
+                <div class="discord-embed" style="border-left: 4px solid #dd4d7d;">
+
+                    <strong style="color: #ffadea;">szefastian: </strong> zaś ten output...
+
+                    <div style="margin-top: 10px; color: #b5a2ff;">🧵 Wątek: 💬 Dyskusja</div>
+
+                </div>
+
+            </div>
+
+            <div class="doc-instructions">
+
+                <p>Gdy szefastian wyśle wiadomość, bot automatycznie otwiera pod nią wątek dla widzów.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+</div>
+
+
+
+<div id="logs" class="tab-content">
+
+   <p class="section-notice" style="text-align: center; color: #da86a2; font-weight: 600; margin: 20px 0;">(Funkcje dla moderacji)</p>
+
+    <h3 class="log-category-title">💬 System Wiadomości</h3>
+
+   
+
+    <div class="doc-card">
+
+        <div class="doc-card-header">
+
+            <div class="doc-title-group"><span class="cmd-name">Usunięcie treści</span><span class="badge admin">Wiadomości</span></div>
+
+        </div>
+
+        <div class="doc-card-body">
+
+            <div class="doc-preview">
+
+                <div class="discord-embed red">
+
+                    <div class="embed-title">🗑 WIADOMOŚĆ USUNIĘTA</div>
+
+                    <div class="embed-fields">
+
+                        <div class="field inline"><span class="field-name">Autor: </span><span class="field-value">Użytkownik</span></div>
+
+                        <div class="field inline"><span class="field-name">Kanał: </span><span class="field-value">#ogólny</span></div>
+
+                        <div class="field"><span class="field-name">Treść: </span><div class="code-block">Sekretna wiadomość, która zniknęła</div></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="doc-instructions">
+
+                <p>Bot rejestruje usunięty tekst. Jeśli wiadomość zawierała załącznik lub embed, zostanie to oznaczone jako "Brak treści".</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="doc-card">
+
+        <div class="doc-card-header">
+
+            <div class="doc-title-group"><span class="cmd-name">Edycja treści</span><span class="badge admin">Wiadomości</span></div>
+
+        </div>
+
+        <div class="doc-card-body">
+
+            <div class="doc-preview preview-report">
+
+                <div class="discord-embed blue">
+
+                    <div class="embed-title">📝 WIADOMOŚĆ EDYTOWANA</div>
+
+                    <div class="embed-fields">
+
+                        <div class="field"><span class="field-name">Przed</span><div class="code-block">Dziś na obiad ryż z kurczakiem</div></div>
+
+                        <div class="field"><span class="field-name">Po</span><div class="code-block">Dziś na obiad ryż z wege kurczakiem</div></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="doc-instructions">
+
+                <p>Pozwala wyłapać osoby, które próbują ukryć złamanie regulaminu poprzez szybką edycję wpisu.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <h3 class="log-category-title">👤 Członkowie</h3>
+
+
+
+    <div class="doc-card">
+
+        <div class="doc-card-header">
+
+            <div class="doc-title-group"><span class="cmd-name">Dołączenie</span><span class="badge admin">Członkowie</span></div>
+
+        </div>
+
+        <div class="doc-card-body">
+
+            <div class="doc-preview">
+
+                <div class="discord-embed orange">
+
+                    <div class="embed-title">📥 NOWY CZŁONEK</div>
+
+                    <div class="embed-fields">
+
+                        <div class="field"><span class="field-name">Użytkownik: </span><span class="field-value">Użytkownik</span></div>
+
+                        <div class="field"><span class="field-name">Konto założone: </span><span class="field-value">2 dni temu</span></div>
+
+                    </div>
+
+                    <div class="embed-description" style="color: #c92a0e; margin-top: 10px;">
+
+                        ⚠️ <strong>Podejrzana aktywność: Konto ma poniżej tygodnia.</strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="doc-instructions">
+
+                <p>System automatycznie wysyła powiadomienie o nowym koncie, aby moderatorzy mogli zwrócić uwagę na potencjalne multikonta.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="doc-card">
+
+        <div class="doc-card-header">
+
+            <div class="doc-title-group"><span class="cmd-name">Wyjście</span><span class="badge admin">Członkowie</span></div>
+
+        </div>
+
+        <div class="doc-card-body">
+
+            <div class="doc-preview">
+
+                <div class="discord-embed darkred">
+
+                    <div class="embed-title">📤 CZŁONEK OPUŚCIŁ SERWER</div>
+
+                    <div class="embed-description">
+
+                        Użytkownik: <strong>Użytkownik</strong><br>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="doc-instructions">
+
+                <p>Rejestruje każde dobrowolne wyjście z serwera.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <h3 class="log-category-title">🔊 Kanały Głosowe</h3>
+
+
+
+<div class="doc-card">
+    <div class="doc-card-header">
+        <div class="doc-title-group">
+            <span class="cmd-name">Aktywność VC</span>
+            <span class="badge admin">Voice</span>
+        </div>
+    </div>
+    <div class="doc-card-body">
+        <div class="doc-preview">
+            <div class="discord-embed" style="border-left: 4px solid #43b581; margin-bottom: 10px;">
+                <div class="embed-title">🔊 DOŁĄCZONO DO VC</div>
+                <div class="embed-description">
+                    <strong>Użytkownik</strong> wszedł na kanał <span class="code-inline">#fembojownia</span>
+                </div>
+            </div>
+
+            <div class="discord-embed" style="border-left: 4px solid #5865f2; margin-bottom: 10px;">
+                <div class="embed-title">🔄 ZMIANA KANAŁU VC</div>
+                <div class="embed-description">
+                    <strong>Użytkownik</strong> przeszedł z <span class="code-inline">#fembojownia</span> do <span class="code-inline">#og</span>
+                </div>
+            </div>
+
+            <div class="discord-embed" style="border-left: 4px solid #f04747;">
+                <div class="embed-title">🔈 OPUSZCZONO VC</div>
+                <div class="embed-description">
+                    <strong>Użytkownik</strong> wyszedł z kanału <span class="code-inline">#fembojownia</span>
+                </div>
+            </div>
+        </div>
+        <div class="doc-instructions">
+            <p>Bot śledzi aktywność na kanałach głosowych: moment wejścia, zmiany kanału oraz wyjścia z niego.</p>
+        </div>
+    </div>
+</div>
+
+
+
+    <h3 class="log-category-title">⚙️ Serwer</h3>
+
+    <div class="doc-card">
+        <div class="doc-card-header">
+            <div class="doc-title-group">
+                <span class="cmd-name">Role</span>
+                <span class="badge admin">Serwer</span>
+            </div>
+        </div>
+        <div class="doc-card-body">
+            <div class="doc-preview">
+                <div class="discord-embed" style="border-left: 4px solid #43b581; margin-bottom: 10px;">
+                    <div class="embed-title">🎭 NOWA ROLA</div>
+                    <div class="embed-description">
+                        Utworzono rolę: <strong>widz</strong>
+                    </div>
+                </div>
+
+                <div class="discord-embed" style="border-left: 4px solid #5865f2; margin-bottom: 10px;">
+                    <div class="embed-title">✏️ ZMIANA NAZWY ROLI</div>
+                    <div class="embed-description">
+                        Stara nazwa: <strong>nowa rola</strong><br>
+                        Nowa nazwa: <strong>widz</strong>
+                    </div>
+                </div>
+
+                <div class="discord-embed" style="border-left: 4px solid #f04747;">
+                    <div class="embed-title">🗑️ USUNIĘTA ROLA</div>
+                    <div class="embed-description">
+                        Nazwa usuniętej roli: <strong>nowa rola</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="doc-instructions">
+                <p>Rejestruje stworzenie, usunięcie oraz edycję nazw ról.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="doc-card">
+        <div class="doc-card-header">
+            <div class="doc-title-group">
+                <span class="cmd-name">Kanały & ustawienia</span>
+                <span class="badge admin">Serwer</span>
+            </div>
+        </div>
+        <div class="doc-card-body">
+            <div class="doc-preview">
+                <div class="discord-embed" style="border-left: 4px solid #f1c40f; margin-bottom: 10px;">
+                    <div class="embed-title">🏠 ZMIANA NAZWY SERWERA</div>
+                    <div class="embed-fields">
+                        <div class="field inline"><span class="field-name">Stara nazwa: </span><span class="field-value">Serwer Discord</span></div>
+                        <div class="field inline"><span class="field-name">Nowa nazwa: </span><span class="field-value">szefownia</span></div>
+                    </div>
+                </div>
+
+                <div class="discord-embed" style="border-left: 4px solid #43b581; margin-bottom: 10px;">
+                    <div class="embed-title">📁 NOWY KANAŁ</div>
+                    <div class="embed-description">
+                        Utworzono kanał: <strong>#ogłoszenia</strong> (`Kategoria: Główne`)
+                    </div>
+                </div>
+
+                <div class="discord-embed" style="border-left: 4px solid #f04747;">
+                    <div class="embed-title">🗑️ USUNIĘTY KANAŁ</div>
+                    <div class="embed-description">
+                        Nazwa usuniętego kanału: <strong>#test</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="doc-instructions">
+                <p>Loguje globalne zmiany: nazwę serwera, zmianę ikony, baneru oraz tworzenie i usuwanie kanałów tekstowych/głosowych.</p>
+            </div>
+        </div>
+    </div>
+
+        </div>
+
+    </div>
+
+<div class="doc-card">
+        </div>
+
+<div id="others" class="tab-content">
+    <h3 class="log-category-title">⚙️ Inne</h3>
+
+    <section class="doc-card">
+        <div class="doc-card-header">
+            <div class="doc-title-group">
+                <span class="cmd-name">Własny kanał głosowy</span>
+                <span class="badge" style="background: #5865f2; color: white;">Użytkownik</span>
+            </div>
+        </div>
+        <div class="doc-card-body">
+            <div class="doc-preview">
+                <div class="discord-embed" style="border-left: 4px solid #b5a2ff;">
+                    <div class="embed-title">🔊 Kanał utworzony!</div>
+                    <div class="embed-description">
+                        Pełne uprawnienia do:<br>
+                        • ⚙️ <strong>Edycji nazwy i limitu osób</strong><br>
+                        • 🚫 <strong>Moderowania (wyrzucania, wyciszania osób)</strong><br>
+                    </div>
+                </div>
+            </div>
+            <div class="doc-instructions">
+                <p>Bot automatycznie tworzy prywatny kanał głosowy, gdy wejdziesz na "Stwórz kanał".</p>
+                <p>Właściciel kanału otrzymuje uprawnienia do zmiany nazwy, maksymalnej liczby uczestników, wyciszania i wyrzucania ich. Gdy ostatnia osoba wyjdzie, kanał jest usuwany.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="doc-card">
+        <div class="doc-card-header">
+            <div class="doc-title-group">
+                <span class="cmd-name">/setup_konkurs</span>
+                <span class="badge admin">Mod</span>
+            </div>
+        </div>
+        <div class="doc-card-body">
+            <div class="doc-preview">
+                <div class="discord-embed" style="border-left: 4px solid #dd4d7d;">
+                    <div class="embed-title">Konkurs budowlany :3</div>
+                    <div class="embed-description">
+                        Kliknij przycisk, aby zgłosić swój udział!
+                    </div>
+                </div>
+            </div>
+            <div class="doc-instructions">
+                <p><strong>Jest to przykładowa/tymczasowa funkcja.</strong></p>
+                <p>Bot zarządza zgłoszeniami, tworząc prywatne wątki dla uczestników.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="doc-card">
+        <div class="doc-card-header">
+            <div class="doc-title-group">
+                <span class="cmd-name">/text</span>
+                <span class="badge" style="background: #5865f2; color: white;">Mod</span>
+            </div>
+        </div>
+        <div class="doc-card-body">
+            <div class="doc-preview">
+                <div class="discord-embed" style="border-left: 4px solid #5865f2;">
+                    <div class="embed-description">
+                        ✅ Wysłano embed z pliku JSON.
+                    </div>
+                </div>
+            </div>
+            <div class="doc-instructions">
+                <p>Pozwala wysyłać sformatowane wiadomości w formie embedu.</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
